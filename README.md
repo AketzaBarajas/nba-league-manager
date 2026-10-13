@@ -1,48 +1,26 @@
-🏀 NBA Player Organizer (Beta)
+# NBA League Manager
 
-Este es un proyecto beta en fase de desarrollo y aprendizaje, diseñado para organizar y visualizar listados de jugadores de la NBA de forma sencilla.
-La idea principal es practicar conceptos básicos de programación, manejo de datos y estructuración de proyectos. Aunque el código es simple, se sientan las bases para futuras mejoras y funcionalidades más avanzadas.
+A Java console program that models an NBA league as conferences, teams and players, and prints the whole structure.
 
-🚧 Estado del Proyecto
-🔹 Fase: Beta
-🔹 Objetivo: Aprendizaje y evolución progresiva
-🔹 Nivel de complejidad: Básico (ideal para quienes comienzan)
+> Learning project — written in 2025 while learning object-oriented programming in Java.
 
-✨ Funcionalidades Actuales
-📋 Carga y muestra de un listado de jugadores.
+## Overview
 
-🔍 Posibilidad de ordenar jugadores por nombre, posición, o equipo (según implementación actual).
+The program builds a small league in memory: two conferences, six teams and thirty players. Each player has a name, a number and a height, and belongs to one of four position classes that extend a common `Jugador` class. Running it prints the league conference by conference.
 
-🧪 Código pensado para experimentación y mejora continua.
+The project practises inheritance, composition (a league holds conferences, which hold teams, which hold players) and collections. The data is written directly in `Main.java`. The output and the code comments are in Spanish.
 
-📚 Tecnologías Utilizadas
-Lenguaje: (especifica aquí el lenguaje usado, por ejemplo Python, JavaScript, etc.)
+## Getting started
 
-(Opcional: alguna librería o framework si se usa, aunque sea algo básico)
+Requires JDK 8 or later.
 
-🛠️ Instalación y Uso
+```bash
+git clone https://github.com/AketzaBarajas/nba-league-manager.git
+cd nba-league-manager
+javac -encoding UTF-8 -d out src/*.java
+java -cp out Main
+```
 
-1. Clona el repositorio:
-git clone https://github.com/tuusuario/nba-player-organizer.git
+## License
 
-2. Accede al directorio:
-cd nba-player-organizer
-
-3. Ejecuta el archivo principal según el lenguaje:
-# Ejemplo en Python
-python main.py
-
-📈 Próximos Pasos
-Añadir interfaz gráfica o versión web.
-
-Implementar conexión con APIs para obtener datos actualizados de la NBA.
-
-Mejorar la estructura del código y documentación.
-
-Pruebas automatizadas y validación de datos.
-
-🤝 Contribuciones
-
-Este proyecto está abierto a sugerencias, consejos y mejoras.
-
-¡Si estás aprendiendo como yo, eres bienvenido/a a colaborar!
+[MIT](LICENSE)
